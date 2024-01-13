@@ -8,6 +8,8 @@
     integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
     crossorigin="anonymous"/>
 
+    <script src="app.js"></script> 
+
     <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -16,42 +18,42 @@
     <p id="instructions">The first player will be assigned the icon <i class="fas fa-star"></i> and the second player will be assigned the icon <i class="fas fa-heart"></i> <br><br> Click a cell to start the game!</p>
     <div class="board">
         <div class="row-1">
-            <div class="cell-1" class="col-1">
-                <input type="text" class="in">
+            <div class="cell-1 col-1 diag">
+                <input type="text" class="in" id="cell-1" onclick="playCell('cell-1'), gameStatus();">
             </div>
-            <div class="cell-2">
-                <input type="text" class="in">
+            <div class="cell-2 col-2">
+                <input type="text" class="in" id="cell-2" onclick="playCell('cell-2'), gameStatus();">
             </div>
-            <div class="cell-3">
-                <input type="text" class="in">
+            <div class="cell-3 col-3">
+                <input type="text" class="in" id="cell-3" onclick="playCell('cell-3'), gameStatus();">
             </div>
 
         </div>
         <div class="row-2">
-            <div class="cell-4">
-                <input type="text" class="in">
+            <div class="cell-4 col-1">
+                <input type="text" class="in" id="cell-4" onclick="playCell('cell-4'), gameStatus();">
             </div>
-            <div class="cell-5">
-                <input type="text" class="in">
+            <div class="cell-5 col-2 diag">
+                <input type="text" class="in" id="cell-5" onclick="playCell('cell-5'), gameStatus();">
             </div>
             <div class="cell-6">
-                <input type="text" class="in">
+                <input type="text" class="in" id="cell-6" onclick="playCell('cell-6'), gameStatus();">
             </div>
         </div>
         <div class="row-3">
-            <div class="cell-7">
-                <input type="text" class="in">
+            <div class="cell-7 col-1">
+                <input type="text" class="in" id="cell-7" onclick="playCell('cell-7'), gameStatus();">
             </div>
-            <div class="cell-8">
-                <input type="text" class="in">
+            <div class="cell-8 col-2">
+                <input type="text" class="in" id="cell-8" onclick="playCell('cell-8'), gameStatus();">
             </div>
-            <div class="cell-9">
-                <input type="text" class="in">
+            <div class="cell-9 col-3 diag">
+                <input type="text" class="in" id="cell-9" onclick="playCell('cell-9'), gameStatus();">
             </div>
         </div>
     </div>
 
-    <button id="reset">START OVER</button>
-    <div class="status">it is player  <i class="fas fa-star"></i>'s turn!</div>
+    <button id="reset" onclick="resetGame();">START OVER</button>
+    <div class="status">it is player  <i class="fas fa-star" id="turn"></i>'s turn!</div>
 </body>
 </html>

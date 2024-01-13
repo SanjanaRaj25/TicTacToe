@@ -17,8 +17,8 @@ var scoreBoard = {
 
     function playCell(cellID){
         const cell = document.getElementById(String(cellID));
-        // if the cell is not null, hasn't already been played
-        if (cell && cell.parentElement.childElementCount < 2) {
+        // if the cell is not null, hasn't already been played, and game is still in progress
+        if (cell && winner===null && cell.parentElement.childElementCount < 2) {
           // update the player, status, and board
             switch(turn){
                 case "star":

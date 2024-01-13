@@ -1,0 +1,103 @@
+*{
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-image: repeating-radial-gradient(white, rgb(251, 240, 242));
+}
+
+header{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    color: rgb(53, 12, 75);
+}
+
+.board{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+p{
+    text-align: center;
+    color: rgb(53, 12, 75);
+}
+
+p i{
+    color: pink;
+    border: 1px dashed pink;
+}
+.in { 
+    cursor: crosshair; 
+    display: flex;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+}   
+.in:active{
+    outline: none;
+}
+.board .row-1{
+    display: flex;
+}
+.board .row-2{
+    cursor: crosshair; 
+    display: flex;
+}
+.board .row-3{
+    cursor: crosshair; 
+    display: flex;
+}
+
+.board .row-1 .cell-2{
+    border-left: 3px solid rgb(53, 12, 75);
+    border-right: 3px solid rgb(53, 12, 75);
+}
+.board .row-2 .cell-4{
+    border-top: 3px solid rgb(53, 12, 75);
+    border-bottom: 3px solid rgb(53, 12, 75);
+
+}
+
+.board .row-2 .cell-5{
+    border: 3px solid rgb(53, 12, 75);
+
+}
+
+.board .row-2 .cell-6{
+    border-top: 3px solid rgb(53, 12, 75);
+    border-bottom: 3px solid rgb(53, 12, 75);
+
+}
+
+.board .row-3 .cell-8{
+    
+    border-left: 3px solid rgb(53, 12, 75);
+    border-right: 3px solid rgb(53, 12, 75);
+}
+
+#reset {
+    margin-top: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: pink;
+    box-sizing: border-box;
+    border: 2px solid pink;
+    width: 150px; 
+    height: 80px; 
+    font-size: 25px;
+    background-color: rgb(53, 12, 75);
+}
+
+.status{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status i{
+    color: pink; 
+}

@@ -1,4 +1,6 @@
 *{
+    /* margin: 10; */
+    /* padding: 10; */
     justify-content: center;
     box-sizing: border-box;
 }
@@ -31,23 +33,44 @@ p i{
     border: 1px dashed pink;
 }
 .in { 
+    position:static;
     cursor: crosshair; 
     display: flex;
     height: 150px;
     width: 150px;
     opacity: 0;
+    z-index: 1;
+    font-size: 24px; 
+    text-align: center; 
 }   
 .in:active{
     outline: none;
 }
+
+.in.used{
+    position:static;
+    cursor: crosshair; 
+    display: flex;
+    height: 50px;
+    width: 150px;
+    opacity: 0;
+    z-index: 1;
+    font-size: 24px; 
+    text-align: center; 
+}
+
 .board .row-1{
+    height: 150px;
+    cursor: crosshair; 
     display: flex;
 }
 .board .row-2{
+    height: 150px;
     cursor: crosshair; 
     display: flex;
 }
 .board .row-3{
+    height: 150px;
     cursor: crosshair; 
     display: flex;
 }
@@ -98,6 +121,25 @@ p i{
     align-items: center;
 }
 
+/* this changes based on the turn */
 .status i{
     color: pink; 
+}
+
+star{
+    transform: translateY(-50px);
+    text-align: center;
+    z-index: 5;
+    font-size: 45px;
+    color: pink;
+    border: 1px dashed pink;
+    opacity: 1;
+}
+
+heart {
+    z-index: 5;
+    font-size: 45px;
+    color: pink;
+    border: 1px dashed pink;
+    opacity: 1;
 }
